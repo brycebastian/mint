@@ -3,88 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Apply for a Mortgage with Bryce Bastian</title>
+  <title>Mint Mortgage - Bryce Bastian</title>
   <style>
     :root {
-      --mint: #3EB489;
-      --mint-dark: #2e8c6a;
-      --mint-light: #e0f7f1;
+      --mint: #98FF98;          /* True mint green */
+      --mint-dark: #66CC99;     /* Deeper mint for contrast */
+      --mint-bg: #F0FFF0;       /* Light mint background */
       --text-dark: #033b36;
+      --white: #ffffff;
     }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--mint-light);
+      background-color: var(--mint-bg);
       color: var(--text-dark);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 2rem;
+      line-height: 1.6;
     }
-    .card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      padding: 2.5rem;
-      max-width: 420px;
-      width: 100%;
+
+    header {
+      background-color: var(--mint);
+      padding: 1.5rem;
       text-align: center;
+      color: var(--text-dark);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
-    h1 {
-      color: var(--mint);
-      margin-bottom: 0.5rem;
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: bold;
     }
-    .subtitle {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
-    .info p {
-      margin: 0.3rem 0;
+
+    .broker-info {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .broker-info h2 {
+      color: var(--mint-dark);
+      margin-bottom: 0.3rem;
+    }
+
+    .info-line {
       font-weight: 500;
     }
+
+    .about-section {
+      margin-top: 2rem;
+    }
+
+    .about-section h3 {
+      color: var(--mint-dark);
+      margin-bottom: 1rem;
+    }
+
     .apply-btn {
-      margin-top: 1.8rem;
       display: inline-block;
-      background-color: var(--mint);
+      margin-top: 2rem;
+      background-color: var(--mint-dark);
       color: white;
-      padding: 0.8rem 1.6rem;
+      padding: 0.8rem 1.5rem;
       border: none;
       border-radius: 5px;
-      text-decoration: none;
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: bold;
+      text-decoration: none;
       transition: background-color 0.3s ease;
     }
+
     .apply-btn:hover {
-      background-color: var(--mint-dark);
+      background-color: #55aa88;
     }
+
     footer {
-      margin-top: 2rem;
-      font-size: 0.85rem;
-      color: #777;
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Work with Bryce Bastian</h1>
-    <div class="subtitle">Mortgage Loan Officer at Mint Mortgage</div>
 
-    <div class="info">
-      <p><strong>Name:</strong> Bryce Bastian</p>
-      <p><strong>Company:</strong> Mint Mortgage</p>
-      <p><strong>Company NMLS:</strong> 2085466</p>
-      <p><strong>My NMLS:</strong> 2057958</p>
+  <header>
+    <h1>Mint Mortgage</h1>
+  </header>
+
+  <div class="container">
+    <div class="broker-info">
+      <h2>Your Mortgage Broker: Bryce Bastian</h2>
+      <p class="info-line">Company NMLS: 2085466</p>
+      <p class="info-line">Personal NMLS: 2057958</p>
     </div>
 
-    <a href="https://www.blink.mortgage/app/signup/p/mintmortgage?campaign=mint" class="apply-btn" target="_blank">
-      Apply Now
-    </a>
+    <div class="about-section">
+      <h3>About Mint Mortgage</h3>
+      <p>
+        Since 2000, Mint Mortgage has been helping the people of California understand and navigate
+        the complex process of buying or refinancing a property. Our services help clients secure the
+        necessary financing for one of life’s most significant purchases.
+      </p>
+      <p>
+        We are committed to easing your concerns and addressing all of your mortgage needs. Our team provides
+        personalized guidance and direction regarding a variety of financing options, empowering you with
+        the knowledge and resources you need.
+      </p>
+      <p><strong>Get in touch today to start making smarter choices regarding mortgages.</strong></p>
+    </div>
 
-    <footer>
-      &copy; 2025 Mint Mortgage. All rights reserved.
-    </footer>
+    <div style="text-align: center;">
+      <a href="https://www.blink.mortgage/app/signup/p/mintmortgage?campaign=mint" target="_blank" class="apply-btn">
+        Apply Now
+      </a>
+    </div>
   </div>
+
+  <footer>
+    &copy; 2025 Mint Mortgage. All rights reserved.
+  </footer>
+
 </body>
 </html>
