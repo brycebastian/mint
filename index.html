@@ -3,68 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mint Mortgage - Bryce Bastian</title>
+  <title>Mint Mortgage – Bryce Bastian</title>
   <style>
     :root {
-      --mint: #98FF98;          /* True mint green */
-      --mint-dark: #66CC99;     /* Deeper mint for contrast */
-      --mint-bg: #F0FFF0;       /* Light mint background */
-      --text-dark: #033b36;
+      --mint: #3EB489;
+      --mint-light: #eaf8f3;
+      --mint-dark: #2f9475;
+      --text-dark: #1a1a1a;
+      --text-muted: #666;
       --white: #ffffff;
     }
 
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--mint-bg);
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: var(--mint-light);
       color: var(--text-dark);
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
-      background-color: var(--mint);
-      padding: 1.5rem;
+      background-color: var(--white);
+      padding: 2rem 1rem;
       text-align: center;
-      color: var(--text-dark);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
 
     header h1 {
-      margin: 0;
+      color: var(--mint-dark);
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero {
+      background-color: var(--mint);
+      color: var(--white);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .hero h2 {
       font-size: 2rem;
-      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
     }
 
     .container {
       max-width: 800px;
-      margin: 2rem auto;
+      margin: 3rem auto;
       background: var(--white);
-      border-radius: 8px;
-      padding: 2rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     }
 
-    .broker-info {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .broker-info h2 {
-      color: var(--mint-dark);
-      margin-bottom: 0.3rem;
-    }
-
-    .info-line {
-      font-weight: 500;
-    }
-
-    .about-section {
-      margin-top: 2rem;
-    }
-
-    .about-section h3 {
+    .section-title {
+      font-size: 1.5rem;
       color: var(--mint-dark);
       margin-bottom: 1rem;
+      border-bottom: 2px solid var(--mint);
+      padding-bottom: 0.5rem;
+    }
+
+    .about p {
+      margin-bottom: 1.2rem;
+      color: var(--text-muted);
+    }
+
+    .info-block {
+      background-color: var(--mint-light);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .info-block p {
+      margin: 0.3rem 0;
+      font-weight: 500;
     }
 
     .apply-btn {
@@ -72,9 +96,9 @@
       margin-top: 2rem;
       background-color: var(--mint-dark);
       color: white;
-      padding: 0.8rem 1.5rem;
+      padding: 0.85rem 2rem;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
       font-size: 1.1rem;
       font-weight: bold;
       text-decoration: none;
@@ -82,15 +106,30 @@
     }
 
     .apply-btn:hover {
-      background-color: #55aa88;
+      background-color: #237e65;
     }
 
     footer {
       text-align: center;
       margin-top: 3rem;
-      padding: 1rem;
+      padding: 1.5rem;
       font-size: 0.9rem;
-      color: #666;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 1.6rem;
+      }
+
+      .container {
+        padding: 1.5rem;
+        margin: 2rem 1rem;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
@@ -100,15 +139,14 @@
     <h1>Mint Mortgage</h1>
   </header>
 
-  <div class="container">
-    <div class="broker-info">
-      <h2>Your Mortgage Broker: Bryce Bastian</h2>
-      <p class="info-line">Company NMLS: 2085466</p>
-      <p class="info-line">Personal NMLS: 2057958</p>
-    </div>
+  <div class="hero">
+    <h2>Work with Bryce Bastian</h2>
+    <p>Experienced Mortgage Broker – Helping Californians Since 2000</p>
+  </div>
 
-    <div class="about-section">
-      <h3>About Mint Mortgage</h3>
+  <div class="container">
+    <div class="about">
+      <h3 class="section-title">About Mint Mortgage</h3>
       <p>
         Since 2000, Mint Mortgage has been helping the people of California understand and navigate
         the complex process of buying or refinancing a property. Our services help clients secure the
@@ -122,7 +160,12 @@
       <p><strong>Get in touch today to start making smarter choices regarding mortgages.</strong></p>
     </div>
 
-    <div style="text-align: center;">
+    <div class="info-block">
+      <p><strong>Broker:</strong> Bryce Bastian</p>
+      <p><strong>Company:</strong> Mint Mortgage</p>
+      <p><strong>Company NMLS:</strong> 2085466</p>
+      <p><strong>My NMLS:</strong> 2057958</p>
+
       <a href="https://www.blink.mortgage/app/signup/p/mintmortgage?campaign=mint" target="_blank" class="apply-btn">
         Apply Now
       </a>
