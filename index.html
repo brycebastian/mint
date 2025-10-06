@@ -5,65 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Apply for a Mortgage with Bryce Bastian</title>
   <style>
+    :root {
+      --mint: #3EB489;
+      --mint-dark: #2e8c6a;
+      --mint-light: #e0f7f1;
+      --text-dark: #033b36;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background: #f7f9fc;
-      color: #333;
       margin: 0;
-      padding: 2rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--mint-light);
+      color: var(--text-dark);
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
       min-height: 100vh;
+      padding: 2rem;
     }
-    .container {
-      background: white;
-      padding: 2rem 3rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      max-width: 400px;
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      padding: 2.5rem;
+      max-width: 420px;
+      width: 100%;
       text-align: center;
     }
     h1 {
-      color: #0077cc;
-      margin-bottom: 1rem;
+      color: var(--mint);
+      margin-bottom: 0.5rem;
     }
-    p {
-      margin: 0.5rem 0;
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .info p {
+      margin: 0.3rem 0;
+      font-weight: 500;
     }
     .apply-btn {
+      margin-top: 1.8rem;
       display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #0077cc;
+      background-color: var(--mint);
       color: white;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 5px;
       text-decoration: none;
-      border-radius: 4px;
+      font-size: 1rem;
       font-weight: bold;
       transition: background-color 0.3s ease;
     }
     .apply-btn:hover {
-      background-color: #005fa3;
+      background-color: var(--mint-dark);
     }
     footer {
       margin-top: 2rem;
       font-size: 0.85rem;
-      color: #666;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Mortgage Application</h1>
-    <p><strong>Bryce Bastian</strong></p>
-    <p>Loan Officer - Mint Mortgage</p>
-    <p>Company NMLS: 2085466</p>
-    <p>My NMLS: 2057958</p>
-    <a href="https://www.blink.mortgage/app/signup/p/mintmortgage?campaign=mint" class="apply-btn" target="_blank" rel="noopener noreferrer">Apply Now</a>
+  <div class="card">
+    <h1>Work with Bryce Bastian</h1>
+    <div class="subtitle">Mortgage Loan Officer at Mint Mortgage</div>
+
+    <div class="info">
+      <p><strong>Name:</strong> Bryce Bastian</p>
+      <p><strong>Company:</strong> Mint Mortgage</p>
+      <p><strong>Company NMLS:</strong> 2085466</p>
+      <p><strong>My NMLS:</strong> 2057958</p>
+    </div>
+
+    <a href="https://www.blink.mortgage/app/signup/p/mintmortgage?campaign=mint" class="apply-btn" target="_blank">
+      Apply Now
+    </a>
+
+    <footer>
+      &copy; 2025 Mint Mortgage. All rights reserved.
+    </footer>
   </div>
-  <footer>
-    &copy; 2025 Mint Mortgage
-  </footer>
 </body>
 </html>
-
